@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.713), black, black, black, rgba(0, 0, 0, 0.719));
+    color: white;
+}
+
+nav {
+    border-top: solid white 2px;
+
+}
+
+
+
+li a {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#mail {
+    border: 1px solid black;
+}
+
+#message {
+    border: 1px solid black;
+}
+
+#envoyer {
+    border: 1px solid black;
+    color: white;
+}
+
+#img-html {
+    width: 125px;
+    height: 100px;
+}
+
+.image img {
+    width: 100px;
+}
+
+.logo-linux img {
+    width: 50px;
+}
+
+.test {
+    margin-left: 0%;
+}
+
+li {
+    list-style-type: none;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.font {
+    font-size: 15px;
+}
+
+.bg-img {
+    background-image: url(../assets/image/test.png);
+}
+
+.bg-img-2 {
+    background-image: url(../assets/image/test-2.png);
+}
+
+.bg-img-3 {
+    background-image: url(../assets/image/test-3.png);
+}
