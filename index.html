@@ -14,7 +14,7 @@
     <title>CV Killian FONTAINE</title>
 </head>
 <header class=" bg-black ">
-    <h1 class=" fs-5 text-fx-1 pt-5 pb-1 ">DEVELOPPEUR WEB JUNIOR</h1>
+    <h1 id="h1" class=" fs-5 text-fx-1 pt-5 pb-1 ">DEVELOPPEUR WEB JUNIOR</h1>
     <nav class="navbar navbar-expand-lg mt-5 pt-4 ">
         <div class="container"> <button class="navbar-toggler bg-light mb-3" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -22,10 +22,10 @@
             <div class="mx-auto collapse row justify-content-between navbar-collapse" id="navbarSupportedContent">
                 <ul class="breadcrumb  d-flex justify-content-center">
                     <li class="breadcrumb-item">
-                        <a href="#bio" class="text-light text-decoration-none ">A PROPOS</a>
+                        <a href="#bio" id="colorjs" class="text-light text-decoration-none ">A PROPOS</a>
                     </li>
-                    <li class="breadcrumb-item  ">
-                        <a href="#comp" class="text-info text-decoration-none ">COMPETENCES</a>
+                    <li  class="breadcrumb-item  ">
+                        <a id="tradone" href="#comp" class="text-info text-decoration-none ">COMPETENCES</a>
                     </li>
                     <li class="breadcrumb-item">
                         <a href="#exp" class="text-warning text-decoration-none ">EXPERIENCE</a>
@@ -44,30 +44,31 @@
 
 </header>
 
-<body class="m-0 p-0">
-    <main class="container-fluid fs-5">
+<body class=" p-0 m-0">
+    <main class="container-fluid fs-5 pb-5">
+        <button onclick="trad()" class="mt-5 bg-secondary text-light sticky-top">FR/EN</button>
         <!-------------------------------------------------------- BIO ----------------------------------------------------------------------------------->
         <div class="row">
             <section class=" col-12 mx-auto justify-content-center mt-5 mb-5 p-5">
                 <article class="mx-auto text-center col-lg-6 p">
                     <h2 id="bio">À PROPOS</h2>
-                    <hr class="text-center">
-                    <p class="mt-5 mb-5 test">Bonjour, je m'appelle <b class=""><i>Killian FONTAINE</i></b> développeur
+                    <hr class="text-center hrb">
+                    <p id="pone" class="mt-5 mb-5 test">Bonjour, je m'appelle <b class=""><i>Killian FONTAINE</i></b> développeur
                         web
                         junior, je suis à la recherche d'un emploi.
                         Autonome de nature, je peux travailler seul ou en équipe, étant également capable de m’adapter
                         à un environnement que je ne connais pas. Cherchant toujours à améliorer et optimiser les
                         projets au maximum pour satisfaire au mieux la demande du client.
                     </p>
-                    <hr class="text-center text-light">
+                    <hr class="text-center text-light hrb">
                 </article>
             </section>
             <section class=" col-lg-3 col-md-12 bg-img mt-5  mx-auto  image text-center pt-5 ">
                 <!-------------------------------------------------------- COMPETENCES ------------------------------------------------------------------->
-                <h2 id="comp" class="text-info ">COMPÉTENCES</h2>
-                <hr class="text-center">
+                <h2 id="comp" class="text-info ">COMPETENCES</h2>
+                <hr class="text-center hrb">
                 <div class="language mb-5 col-12 p-5">
-                    <h3 class="">langages :</h3>
+                    <h3 class="">languages :</h3>
                     <article class=" mt-5 a">
                         <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="text-decoration-none"
                             target="_blank"><img src="assets/image/logo-html.png" class=" img-html " alt="..."
@@ -89,7 +90,7 @@
                     </article>
                 </div>
                 <div class="os pt-5 p-5 ">
-                    <h3 class="m-3 col-12">Systèmes d'exploitation :</h3>
+                    <h3 id="h3" class="m-3 col-12">Systèmes d'exploitation :</h3>
                     <article class="mt-5 ">
                         <a href="https://www.microsoft.com/fr-fr/windows?r=1" class="text-decoration-none"
                             target="_blank"><img src="assets/image/logo-windows.png" alt="">
@@ -112,39 +113,39 @@
                 <div class="os col-12">
                     <div class="text-black">
                         <article>
-                            <h3 class="mb-5 col-12">LANGUE :</h3>
+                            <h3 id="h32" class="mb-5 col-12">LANGUE :</h3>
                             <a href="https://fr.wikipedia.org/wiki/Fran%C3%A7ais" class="text-decoration-none"
                                 target="_blank"><img src="assets/image/france.png" alt="">
-                                <p class="text-black">FRANÇAIS</p>
+                                <p id="fr" class="text-black">FRANÇAIS</p>
                             </a>
                         </article>
                         <article class="mt-5 mb-5">
                             <a href="https://fr.wikipedia.org/wiki/Anglais" class="text-decoration-none"
                                 target="_blank"><img src="assets/image/anglais.png" alt="">
-                                <p class="text-black">ANGLAIS</p>
+                                <p id="en" class="text-black">ANGLAIS</p>
                             </a>
                         </article>
                     </div>
                 </div>
                 <div class="os col-12">
                     <div class="text-black">
-                        <h3 class="mb-5 col-12">LOISIRS :</h3>
+                        <h3 id="fun" class="mb-5 col-12">LOISIRS :</h3>
                         <article class="mb-5">
                             <a href="https://fr.wikipedia.org/wiki/Jeu_vid%C3%A9o" class="text-decoration-none"
                                 target="_blank"><img src="assets/image/folderblackgames_92891.png" alt="">
-                                <p class="text-black">JEUX VIDÉOS</p>
+                                <p id="jv" class="text-black">JEUX VIDÉOS</p>
                             </a>
                         </article>
                         <article class="mb-5">
                             <a href="https://fr.wikipedia.org/wiki/Lire" class="text-decoration-none"
                                 target="_blank"><img src="assets/image/bookstack_libr_3024.png" alt="">
-                                <p class="text-black">LIRE</p>
+                                <p id="lire" class="text-black">LIRE</p>
                             </a>
                         </article>
                         <article class="mb-5">
                             <a href="https://fr.wikipedia.org/wiki/Basket-ball" class="text-decoration-none"
                                 target="_blank"><img src="assets/image/326-basketball-hoop_102424.png" alt="">
-                                <p class="text-black">BASKET</p>
+                                <p id="basket" class="text-black">BASKET</p>
                             </a>
                         </article>
                     </div>
@@ -154,30 +155,30 @@
                 <section class="bg-img col-lg-8 mx-auto text-light ">
                     <!-------------------------------------------------------- EXPERIENCE -------------------------------------------------------------------->
                     <article class="hvr-icon-spin p-5  text-center">
-                        <h2 id="exp" class="text-warning">EXPÉRIENCES PROFESSIONNELLES</h2>
-                        <hr class="text-center">
+                        <h2 id="exp" class="text-warning">EXPERIENCES PROFESSIONNELLES</h2>
+                        <hr class="text-center hrb">
                         <ul class="mt-5 mb-5 p-0">
                             <li class="mb-5">
-                                <p><b>Technicien maintenance informatique</b></p>
-                                <p><i><small>AIS informatique -2020- 1 mois</small></i></p>
-                                <p><i><small>Pom'N'Tech -2017- 2 mois</small></i></p>
+                                <p id="exp1"><b>Technicien maintenance informatique</b></p>
+                                <p><i><small>AIS informatique -2020- </small></i></p>
+                                <p><i><small>Pom'N'Tech  -2017- </small></i></p>
                             </li>
                             <li class="mb-5">
-                                <p><b>Technicien réseau
+                                <p id="exp2"><b>Technicien réseau
                                         informatique Ecole centrale Marseille</b></p>
-                                <p><small><i>Ecole centrale Marseille -2018- 1 mois</i></small></p>
+                                <p><small><i>Ecole centrale Marseille  -2018- </i></small></p>
                             </li>
                             <li class="mb-5">
-                                <p><b>Technicien/acceuil client</b></p>
-                                <p><i><small>Néomania -2018/2019- 2 mois</small></i></p>
+                                <p id="exp3"><b>Technicien/acceuil client</b></p>
+                                <p><i><small>Néomania  -2018/2019- </small></i></p>
                             </li>
                             <li class="mb-5">
                                 <b>
-                                    <p>serveur en restauration</p>
+                                    <p id="exp4">serveur en restauration</p>
                                 </b>
-                                <p><small><i>La Rade -2016/2017- 2 mois</i></small></p>
-                                <p><small><i>La Bauquière -2016- 1 mois</i></small></p>
-                                <p><small><i>Restaurant La Piscine -2015- 1 mois</i></small></p>
+                                <p><small><i>La Rade  -2016/2017- </i></small></p>
+                                <p><small><i>La Bauquière  -2016- </i></small></p>
+                                <p><small><i>Restaurant La Piscine  -2015- </i></small></p>
                             </li>
                         </ul>
                     </article>
@@ -186,14 +187,14 @@
                 <section class="bg-img-2 text-light mt-5 mx-auto col-lg-8 ">
                     <div class=" p-4 ">
                         <h2 id="formation" class="text-danger">FORMATION</h2>
-                        <hr class="text-center text-black">
+                        <hr class="text-center text-black ">
                         <article class=" pt-3">
                             <ul class="p-0">
                                 <li>
-                                    <p><b>Bac Professionnel Systèmes Numériques</b></p>
-                                    <p><b>BEP Systèmes Numériques</b></p>
-                                    <p><small><i>Lycée Ampère -2017 à 2020-</i></small></p>
-                                    <p><small><i>Bac pro/BEP: installer des sytèmes d'exploitation, gérer la demande du
+                                    <p id="bac" ><b>Bac Professionnel Systèmes Numériques</b><br>
+                                    <b>BEP Systèmes Numériques</b></p>
+                                    <p><small><i> Ampère -2017 à 2020-</i></small></p>
+                                    <p id="bac1"><small><i>Bac pro/BEP: installer des sytèmes d'exploitation, gérer la demande du
                                                 client, diagnostiquer une panne.</i></small></p>
                                 </li>
                             </ul>
@@ -201,16 +202,16 @@
                         <article>
                             <ul class="p-0">
                                 <li>
-                                    <p><b>CAP Restauration</b></p>
-                                    <p><small><i>Lycée Méditerranée -2015 à 2017-</i></small></p>
-                                    <p><small><i>CAP: acceuil client, prendre des commandes, service à table, travailler
+                                    <p id="cap"><b>CAP Restauration</b></p>
+                                    <p><small><i> Méditerranée -2015 à 2017-</i></small></p>
+                                    <p id="cap1"><small><i>CAP: acceuil client, prendre des commandes, service à table, travailler
                                                 en equipe</i></small></p>
                                 </li>
                             </ul>
                         </article>
                         <article>
-                            <p><b>Dîplomes National du Brevet</b></p>
-                            <p><small><i>Collèges Nathalie Sarraute -2014 à 2015-</i></small></p>
+                            <p id="dnb"><b>Dîplomes National du Brevet</b></p>
+                            <p><small><i> Nathalie Sarraute -2014 à 2015-</i></small></p>
 
                         </article>
                     </div>
@@ -220,16 +221,17 @@
                     <div id="contact" class="   mt-5   ">
                         <form class="bg-img-3 mx-auto  p-5  col-lg-8 text-light ">
                             <h2 class="text-center  text-success">CONTACT</h2>
-                            <hr class="text-center text-black">
+                            <hr class="text-center text-black ">
                             <div class="text-center mt-5">
-                                <label for="mail">Email:</label>
+                                <label id="mail" for="mail"><p>Email:</p></label>
                                 <input type="mail" id="mail" class="form-control mt-3" name="mail">
                             </div>
                             <div class="text-center mt-5 ">
-                                <label for="message">Votre message:</label>
+                                <label  for="message"><p id="mess">Votre message:</p></label>
                                 <textarea class="form-control mt-3" rows="2" id="message" name="message"></textarea>
-                                <input type="submit" id="envoyer"
-                                    class="mt-5 bg-black bg-opacity-75 form-control text-light ">
+                                <button  type="submit" 
+                                class="mt-5 bg-black bg-opacity-75 form-control text-light "><p id="envoyer">Envoyer</p></button>
+                                
                             </div>
                         </form>
                     </div>
@@ -237,8 +239,8 @@
             </div>
         </div>
     </main>
-    <footer class="container-fluid bg-black bg-gradient text-light mt-5">
-        <div class="row text-center pt-3 pb-1">
+    <footer class="container-fluid bg-black bg-gradient text-light ">
+        <div  class="row text-center pt-3 pb-1">
             <div class="mail col-lg-3">
                 <a href="mailto:killian64718@gmail.com" target="_blank" class="text-decoration-none">
                     <p class="info text-light">kilian64718@gmail.com</p>
@@ -251,14 +253,14 @@
                 </a>
             </div>
             <div class="location col-lg-3">
-                <a class="text-decoration-none" target="_blank"
+                <a id="fred" class="text-decoration-none" target="_blank"
                     href="https://www.google.fr/maps/place/Marseille/@43.2804489,5.3106091,12z/data=!3m1!4b1!4m5!3m4!1s0x12c9bf4344da5333:0x40819a5fd970220!8m2!3d43.296482!4d5.36978">
                     <p class="info text-light">Marseille</p>
                 </a>
 
             </div>
             <div class="col-lg-3 ">
-                <button class="boutton "><a target="_blank" href="assets/files/CV_2022-05-12_Killian_Fontaine.pdf"
+                <button class="boutton "><a id="cv" target="_blank" href="assets/files/CV_2022-05-12_Killian_Fontaine.pdf"
                         class=" text-light">TELECHARGER MON
                         CV</a></button>
             </div>
@@ -267,6 +269,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
